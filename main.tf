@@ -117,10 +117,3 @@ resource "google_sql_database" "database" {
   instance = google_sql_database_instance.main.name
 }
 
-
-resource "google_sql_user" "users" {
-  name     = "admin"
-  instance = google_sql_database_instance.main.name
-  host     = "admin "
-  password = "adminadmin"
-}
