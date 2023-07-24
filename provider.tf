@@ -7,7 +7,7 @@ terraform {
   }
 }
 provider "google" {
-    credentials = file(key.json)
+    credentials = "./key.json"
     project = "rational-autumn-393513"
     region = "us-west1"
     }
